@@ -1,6 +1,8 @@
 
 package apTests;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.chrome.ChromeDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -12,27 +14,21 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 import org.openqa.selenium.logging.LogType;
 import org.openqa.selenium.logging.LoggingPreferences;
+import org.openqa.selenium.remote.BrowserType;
 ///
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class TestCases {
-    WebDriver driver;
+    RemoteWebDriver driver;
 
-    public TestCases() {
+    public TestCases() throws MalformedURLException {
         System.out.println("Constructor: TestCases");
 
-        WebDriverManager.chromedriver().timeout(30).setup();
-        ChromeOptions options = new ChromeOptions();
-        LoggingPreferences logs = new LoggingPreferences();
+        final DesiredCapabilities capabilities = new DesiredCapabilities();
+        capabilities.setBrowserName(BrowserType.CHROME);
+        driver = new RemoteWebDriver(new URL("http://localhost:8082/wd/hub"), capabilities);
 
-        // Set log level and type
-        logs.enable(LogType.BROWSER, Level.ALL);
-        logs.enable(LogType.DRIVER, Level.ALL);
-        options.setCapability("goog:loggingPrefs", logs);
-
-        // Set path for log file
-        System.setProperty(ChromeDriverService.CHROME_DRIVER_LOG_PROPERTY, "chromedriver.log");
-
-        driver = new ChromeDriver(options);
 
         // Set browser to maximize and wait
         driver.manage().window().maximize();
