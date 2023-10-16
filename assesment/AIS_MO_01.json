@@ -1,7 +1,7 @@
 {
 "instruction_set":[
   {
-    "description": "TestCase01: Verify Wikipedia Homepage URL",
+    "description": "TestCase01_1: Verify Wikipedia Homepage URL",
     "validations": [
       {
         "object_notation": "COMMAND",
@@ -19,7 +19,7 @@
     "hint": "Ensure you are on the Wikipedia homepage with the correct URL."
   },
   {
-    "description": "TestCase02: Verify Wikipedia Header and Footer",
+    "description": "TestCase02_1: Verify Wikipedia Header and Footer",
     "validations": [
       {
         "object_notation": "COMMAND",
@@ -37,7 +37,7 @@
     "hint": "Ensure the page contains the heading 'Wikipedia' "
   },
   {
-    "description": "TestCase02: Verify Wikipedia Header and Footer",
+    "description": "TestCase02_2: Verify Wikipedia Header and Footer",
     "validations": [
       {
         "object_notation": "COMMAND",
@@ -55,7 +55,7 @@
     "hint": "Ensure the page contains the footer contains 'Terms of Use' and 'Privacy Policy'."
   },
   {
-    "description": "TestCase02: Verify Wikipedia Header and Footer",
+    "description": "TestCase02_3: Verify Wikipedia Header and Footer",
     "validations": [
       {
         "object_notation": "COMMAND",
@@ -73,7 +73,7 @@
     "hint": "Ensure the page contains the footer contains 'Terms of Use' and 'Privacy Policy'."
   },
   {
-    "description": "TestCase03: Verify the search functionality",
+    "description": "TestCase03_1: Verify the search functionality",
     "validations": [
       {
         "object_notation": "COMMAND",
@@ -91,7 +91,7 @@
     "hint": "Ensure you are sending apple and you are clicking on Apple_Inc "
   },
   {
-    "description": "TestCase03: Verify the search functionality",
+    "description": "TestCase03_2: Verify the search functionality",
     "validations": [
       {
         "object_notation": "COMMAND",
@@ -109,7 +109,7 @@
     "hint": "Ensure that 'Steve Jobs' in the founders list"
   },
   {
-    "description": "TestCase04: Validate Hyperlink Functionality",
+    "description": "TestCase04_1: Validate Hyperlink Functionality",
     "validations": [
       {
         "object_notation": "COMMAND",
@@ -127,7 +127,7 @@
     "hint": "Ensure you are on the Wikipedia homepage"
   },
   {
-    "description": "TestCase04: Validate Hyperlink Functionality",
+    "description": "TestCase04_2: Validate Hyperlink Functionality",
     "validations": [
       {
         "object_notation": "COMMAND",
@@ -145,7 +145,7 @@
     "hint": "Ensure you are sending microsot and you are clicking on Microsoft "
   },
   {
-    "description": "TestCase04: Validate Hyperlink Functionality",
+    "description": "TestCase04_3: Validate Hyperlink Functionality",
     "validations": [
       {
         "object_notation": "COMMAND",
@@ -163,7 +163,7 @@
     "hint": "Ensure you are clicking on the reference hyperlink"
   },
   {
-    "description": "TestCase05: Verify 'About Wikipedia' Link and URL in Dropdown",
+    "description": "TestCase05_1: Verify 'About Wikipedia' Link and URL in Dropdown",
     "validations": [
       {
         "object_notation": "COMMAND",
@@ -181,7 +181,7 @@
     "hint": "Ensure that you are navigating to Wikipedia English Name Page"
   },
   {
-    "description": "TestCase05: Verify 'About Wikipedia' Link and URL in Dropdown",
+    "description": "TestCase05_2: Verify 'About Wikipedia' Link and URL in Dropdown",
     "validations": [
       {
         "object_notation": "COMMAND",
